@@ -1,0 +1,45 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景 -->
+  <rect width="512" height="512" rx="96" fill="#E8F5E9"/>
+  
+  <!-- 阴影效果 -->
+  <ellipse cx="256" cy="440" rx="120" ry="20" fill="#000000" opacity="0.1"/>
+  
+  <!-- 树干 -->
+  <rect x="224" y="280" width="64" height="140" rx="8" fill="#6D4C41"/>
+  <rect x="236" y="280" width="12" height="140" fill="#5D4037" opacity="0.3"/>
+  
+  <!-- 树叶层 1 (最下层 - 深绿) -->
+  <path d="M256 300 L140 380 L372 380 Z" fill="#1B5E20"/>
+  <path d="M256 300 L140 380 L180 380 Z" fill="#2E7D32" opacity="0.6"/>
+  
+  <!-- 树叶层 2 (中层 - 中绿) -->
+  <path d="M256 220 L160 300 L352 300 Z" fill="#2E7D32"/>
+  <path d="M256 220 L160 300 L200 300 Z" fill="#388E3C" opacity="0.6"/>
+  
+  <!-- 树叶层 3 (上层 - 浅绿) -->
+  <path d="M256 140 L180 220 L332 220 Z" fill="#388E3C"/>
+  <path d="M256 140 L180 220 L220 220 Z" fill="#4CAF50" opacity="0.6"/>
+  
+  <!-- 树叶层 4 (顶层 - 最浅绿) -->
+  <path d="M256 80 L200 140 L312 140 Z" fill="#4CAF50"/>
+  <path d="M256 80 L200 140 L236 140 Z" fill="#66BB6A" opacity="0.6"/>
+  
+  <!-- 装饰元素 - 文本符号 (淡红色) -->
+  <!-- T -->
+  <rect x="236" y="200" width="40" height="8" rx="4" fill="#F8BBD0"/>
+  <rect x="252" y="200" width="8" height="32" rx="4" fill="#F8BBD0"/>
+  
+  <!-- 装饰圆点 -->
+  <circle cx="256" cy="260" r="12" fill="#F8BBD0"/>
+  <circle cx="216" cy="280" r="10" fill="#F8BBD0" opacity="0.8"/>
+  <circle cx="296" cy="280" r="10" fill="#F8BBD0" opacity="0.8"/>
+  <circle cx="236" cy="320" r="8" fill="#F8BBD0" opacity="0.6"/>
+  <circle cx="276" cy="320" r="8" fill="#F8BBD0" opacity="0.6"/>
+  <circle cx="256" cy="340" r="8" fill="#F8BBD0" opacity="0.5"/>
+  
+  <!-- 高光效果 -->
+  <circle cx="280" cy="160" r="20" fill="#FFFFFF" opacity="0.3"/>
+  <circle cx="290" cy="170" r="12" fill="#FFFFFF" opacity="0.2"/>
+</svg>
+

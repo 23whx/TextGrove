@@ -1,6 +1,26 @@
-<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <rect width="32" height="32" rx="6" fill="#E8F5E9"/>
-  <path d="M16 8L12 12H14V20H12L16 24L20 20H18V12H20L16 8Z" fill="#388E3C"/>
-  <circle cx="16" cy="16" r="2" fill="#F8BBD0"/>
+<svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景 -->
+  <rect width="128" height="128" rx="24" fill="#E8F5E9"/>
+  
+  <!-- 树干 -->
+  <rect x="56" y="68" width="16" height="32" rx="2" fill="#6D4C41"/>
+  
+  <!-- 树叶层 1 (最下层) -->
+  <path d="M64 72 L40 88 L88 88 Z" fill="#2E7D32"/>
+  
+  <!-- 树叶层 2 (中层) -->
+  <path d="M64 56 L44 72 L84 72 Z" fill="#388E3C"/>
+  
+  <!-- 树叶层 3 (顶层) -->
+  <path d="M64 40 L48 56 L80 56 Z" fill="#4CAF50"/>
+  
+  <!-- 装饰圆点 (淡红色强调) -->
+  <circle cx="64" cy="52" r="4" fill="#F8BBD0"/>
+  <circle cx="54" cy="64" r="3" fill="#F8BBD0" opacity="0.8"/>
+  <circle cx="74" cy="64" r="3" fill="#F8BBD0" opacity="0.8"/>
+  <circle cx="64" cy="76" r="3" fill="#F8BBD0" opacity="0.6"/>
+  
+  <!-- 文字装饰 (可选) -->
+  <text x="64" y="110" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="600" fill="#2E7D32" text-anchor="middle">TextGrove</text>
 </svg>
 

@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TextGrove 图标预览</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: system-ui, -apple-system, sans-serif;
+      background: linear-gradient(135deg, #E8F5E9 0%, #C8E6C9 100%);
+      padding: 40px 20px;
+      min-height: 100vh;
+    }
+    
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    
+    h1 {
+      text-align: center;
+      color: #2E7D32;
+      margin-bottom: 10px;
+      font-size: 2.5rem;
+    }
+    
+    .subtitle {
+      text-align: center;
+      color: #558B2F;
+      margin-bottom: 40px;
+      font-size: 1.1rem;
+    }
+    
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+      margin-bottom: 40px;
+    }
+    
+    .card {
+      background: white;
+      border-radius: 16px;
+      padding: 30px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    
+    .icon-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px;
+      min-height: 150px;
+    }
+    
+    .icon-title {
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: #2E7D32;
+      margin-bottom: 10px;
+    }
+    
+    .icon-desc {
+      color: #666;
+      font-size: 0.9rem;
+      line-height: 1.5;
+    }
+    
+    .size-label {
+      display: inline-block;
+      background: #F8BBD0;
+      color: #880E4F;
+      padding: 4px 12px;
+      border-radius: 12px;
+      font-size: 0.85rem;
+      font-weight: 500;
+      margin-top: 10px;
+    }
+    
+    .preview-bg {
+      padding: 20px;
+      border-radius: 12px;
+      margin-bottom: 15px;
+    }
+    
+    .bg-light { background: #f5f5f5; }
+    .bg-dark { background: #2c2c2c; }
+    .bg-color { background: #E8F5E9; }
+    
+    .colors {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+      gap: 15px;
+      margin-top: 30px;
+    }
+    
+    .color-item {
+      text-align: center;
+    }
+    
+    .color-box {
+      width: 100%;
+      height: 80px;
+      border-radius: 8px;
+      margin-bottom: 8px;
+      border: 2px solid #e0e0e0;
+    }
+    
+    .color-label {
+      font-size: 0.9rem;
+      color: #666;
+      font-weight: 500;
+    }
+    
+    .color-code {
+      font-size: 0.85rem;
+      color: #999;
+      font-family: 'Monaco', 'Courier New', monospace;
+    }
+    
+    .download-section {
+      background: white;
+      border-radius: 16px;
+      padding: 30px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+      margin-top: 40px;
+    }
+    
+    .download-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+    
+    .download-btn {
+      display: block;
+      padding: 15px 20px;
+      background: #4CAF50;
+      color: white;
+      text-decoration: none;
+      border-radius: 10px;
+      font-weight: 600;
+      transition: all 0.3s;
+      text-align: center;
+    }
+    
+    .download-btn:hover {
+      background: #388E3C;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+    
+    .instructions {
+      background: #FFF9C4;
+      border-left: 4px solid #FBC02D;
+      padding: 20px;
+      border-radius: 8px;
+      margin-top: 30px;
+    }
+    
+    .instructions h3 {
+      color: #F57F17;
+      margin-bottom: 10px;
+    }
+    
+    .instructions ol {
+      margin-left: 20px;
+      color: #666;
+    }
+    
+    .instructions li {
+      margin: 8px 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🌲 TextGrove 图标设计</h1>
+    <p class="subtitle">完整的品牌视觉资产预览</p>
+    
+    <!-- 主要图标展示 -->
+    <div class="grid">
+      <!-- Favicon -->
+      <div class="card">
+        <div class="icon-title">Favicon</div>
+        <div class="preview-bg bg-light">
+          <div class="icon-wrapper">
+            <img src="favicon.svg" alt="Favicon" style="width: 64px; height: 64px;">
+          </div>
+        </div>
+        <div class="preview-bg bg-dark">
+          <div class="icon-wrapper">
+            <img src="favicon.svg" alt="Favicon" style="width: 64px; height: 64px;">
+          </div>
+        </div>
+        <p class="icon-desc">浏览器标签页图标</p>
+        <span class="size-label">128x128</span>
+      </div>
+      
+      <!-- App Icon Small -->
+      <div class="card">
+        <div class="icon-title">应用图标 - 小</div>
+        <div class="preview-bg bg-color">
+          <div class="icon-wrapper">
+            <img src="icon.svg" alt="App Icon" style="width: 120px; height: 120px;">
+          </div>
+        </div>
+        <p class="icon-desc">移动设备应用图标</p>
+        <span class="size-label">192x192 推荐</span>
+      </div>
+      
+      <!-- App Icon Large -->
+      <div class="card">
+        <div class="icon-title">应用图标 - 大</div>
+        <div class="preview-bg bg-light">
+          <div class="icon-wrapper">
+            <img src="icon.svg" alt="App Icon Large" style="width: 160px; height: 160px;">
+          </div>
+        </div>
+        <p class="icon-desc">高分辨率设备图标</p>
+        <span class="size-label">512x512 推荐</span>
+      </div>
+    </div>
+    
+    <!-- 品牌配色 -->
+    <div class="card">
+      <h2 style="color: #2E7D32; margin-bottom: 20px;">品牌配色方案</h2>
+      <div class="colors">
+        <div class="color-item">
+          <div class="color-box" style="background: #E8F5E9;"></div>
+          <div class="color-label">背景色</div>
+          <div class="color-code">#E8F5E9</div>
+        </div>
+        <div class="color-item">
+          <div class="color-box" style="background: #FFFFFF;"></div>
+          <div class="color-label">基础白</div>
+          <div class="color-code">#FFFFFF</div>
+        </div>
+        <div class="color-item">
+          <div class="color-box" style="background: #F8BBD0;"></div>
+          <div class="color-label">强调色</div>
+          <div class="color-code">#F8BBD0</div>
+        </div>
+        <div class="color-item">
+          <div class="color-box" style="background: #4CAF50;"></div>
+          <div class="color-label">主绿色</div>
+          <div class="color-code">#4CAF50</div>
+        </div>
+        <div class="color-item">
+          <div class="color-box" style="background: #388E3C;"></div>
+          <div class="color-label">深绿色</div>
+          <div class="color-code">#388E3C</div>
+        </div>
+        <div class="color-item">
+          <div class="color-box" style="background: #2E7D32;"></div>
+          <div class="color-label">更深绿</div>
+          <div class="color-code">#2E7D32</div>
+        </div>
+        <div class="color-item">
+          <div class="color-box" style="background: #6D4C41;"></div>
+          <div class="color-label">树干棕</div>
+          <div class="color-code">#6D4C41</div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- 下载和使用说明 -->
+    <div class="download-section">
+      <h2 style="color: #2E7D32; margin-bottom: 15px;">📥 生成图标文件</h2>
+      <p style="color: #666; margin-bottom: 20px;">
+        使用以下在线工具将 SVG 转换为所需格式：
+      </p>
+      
+      <div class="download-grid">
+        <a href="https://realfavicongenerator.net/" target="_blank" class="download-btn">
+          Favicon Generator
+        </a>
+        <a href="https://www.iloveimg.com/zh-cn/convert-to-jpg/svg-to-jpg" target="_blank" class="download-btn">
+          SVG to PNG
+        </a>
+        <a href="https://cloudconvert.com/svg-to-ico" target="_blank" class="download-btn">
+          SVG to ICO
+        </a>
+        <a href="https://www.canva.com/" target="_blank" class="download-btn">
+          Canva 设计
+        </a>
+      </div>
+      
+      <div class="instructions">
+        <h3>⚡ 快速生成步骤</h3>
+        <ol>
+          <li>下载 <code>icon.svg</code> 文件</li>
+          <li>访问 <a href="https://realfavicongenerator.net/" target="_blank">RealFaviconGenerator</a></li>
+          <li>上传 SVG 文件</li>
+          <li>选择生成所有平台图标</li>
+          <li>下载并解压到 <code>public/</code> 目录</li>
+          <li>替换现有的图标文件</li>
+        </ol>
+      </div>
+      
+      <div class="instructions" style="background: #E3F2FD; border-left-color: #2196F3; margin-top: 20px;">
+        <h3 style="color: #1565C0;">📐 需要的文件尺寸</h3>
+        <ul style="list-style: none; margin-left: 0;">
+          <li>✓ <strong>favicon.ico</strong> - 16x16, 32x32, 48x48</li>
+          <li>✓ <strong>icon-192.png</strong> - 192x192 (PWA)</li>
+          <li>✓ <strong>icon-512.png</strong> - 512x512 (PWA)</li>
+          <li>✓ <strong>apple-touch-icon.png</strong> - 180x180 (iOS)</li>
+          <li>✓ <strong>og-image.png</strong> - 1200x630 (社交分享)</li>
+        </ul>
+      </div>
+    </div>
+    
+    <!-- 社交分享预览 -->
+    <div class="card" style="margin-top: 30px;">
+      <h2 style="color: #2E7D32; margin-bottom: 20px;">📱 社交分享图设计建议</h2>
+      <div style="background: #f5f5f5; padding: 30px; border-radius: 12px; text-align: left;">
+        <div style="background: white; padding: 40px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+          <div style="display: flex; align-items: center; gap: 30px;">
+            <img src="icon.svg" alt="Logo" style="width: 120px; height: 120px;">
+            <div style="flex: 1;">
+              <h1 style="font-size: 3rem; margin: 0; color: #2E7D32;">TextGrove</h1>
+              <p style="font-size: 1.5rem; color: #666; margin: 10px 0;">免费在线文本工具站</p>
+              <div style="display: flex; gap: 15px; margin-top: 20px;">
+                <span style="background: #E8F5E9; padding: 8px 16px; border-radius: 8px; font-size: 0.9rem;">字数统计</span>
+                <span style="background: #E8F5E9; padding: 8px 16px; border-radius: 8px; font-size: 0.9rem;">文本去重</span>
+                <span style="background: #E8F5E9; padding: 8px 16px; border-radius: 8px; font-size: 0.9rem;">词频分析</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p style="margin-top: 20px; color: #666; text-align: center;">
+          <strong>尺寸：</strong> 1200 x 630 像素 (推荐用于 Facebook, Twitter, LinkedIn)
+        </p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+
