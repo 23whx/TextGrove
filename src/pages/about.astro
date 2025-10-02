@@ -1,0 +1,30 @@
+---
+import Header from '@/components/Header';
+import AboutContent from '@/components/AboutContent';
+import SEO from '@/components/SEO';
+import '@/styles/global.css';
+---
+
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <SEO 
+      title="关于 TextGrove - 开源免费的文本处理工具"
+      description="TextGrove 是一个开源、免费、注重隐私的文本工具站。采用 Astro + React + TypeScript 构建，提供字数统计、文本去重、词频分析等实用功能。所有数据完全本地处理，不上传服务器。"
+      canonical="/about"
+      lang="zh-CN"
+    />
+  </head>
+  <body class="min-h-screen bg-[var(--bg)] text-gray-800">
+    <Header client:load />
+
+    <main class="mx-auto max-w-4xl px-4 py-12">
+      <AboutContent client:load />
+    </main>
+
+    <footer class="py-10 text-center text-sm text-gray-500">
+      © 2025 TextGrove
+    </footer>
+  </body>
+</html>
+

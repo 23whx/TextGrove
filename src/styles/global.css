@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #E8F5E9;
+  --base: #FFFFFF;
+  --accent: #F8BBD0;
+}
+
+html {
+  background: var(--bg);
+}
+
+.card {
+  background: var(--base);
+}
+
+/* 自定义滚动条 */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+/* 输入框样式 */
+textarea, input[type="text"], input[type="number"] {
+  @apply border border-gray-300 focus:border-brand-accent focus:ring-2 focus:ring-brand-accent/30 outline-none transition;
+}
+
+/* 按钮样式 */
+button {
+  @apply transition-all hover:scale-105 active:scale-95;
+}
+
+/* 选择框样式 */
+select {
+  @apply border border-gray-300 focus:border-brand-accent focus:ring-2 focus:ring-brand-accent/30 outline-none transition;
+}
+
+/* 动画 */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.2s ease-out;
+}
+

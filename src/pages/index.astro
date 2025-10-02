@@ -1,0 +1,48 @@
+---
+import ToolTabs from '@/components/ToolTabs';
+import Toast from '@/components/ui/Toast';
+import Header from '@/components/Header';
+import SEO from '@/components/SEO';
+import '@/styles/global.css';
+---
+
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <SEO 
+      title="TextGrove - 免费在线文本工具站 | 字数统计、去重、词频分析、格式化"
+      description="TextGrove 提供完全免费的在线文本处理工具：实时字数统计、智能文本去重、词频分析、简繁转换、代码格式化（JSON/XML/HTML/CSS/SQL）。所有处理完全本地进行，保护您的隐私和数据安全。"
+      canonical="/"
+      lang="zh-CN"
+    />
+  </head>
+  <body class="min-h-screen bg-[var(--bg)] text-gray-800">
+    <!-- 头部 -->
+    <Header client:load />
+
+    <!-- 主内容 -->
+    <main class="mx-auto max-w-7xl px-4 py-8">
+      <ToolTabs client:load />
+    </main>
+
+    <!-- 底部 -->
+    <footer class="py-10 text-center text-sm text-gray-600 space-y-2">
+      <p>© 2025 TextGrove | 完全本地处理，保护您的隐私</p>
+      <div class="flex justify-center gap-4 text-xs">
+        <a href="mailto:wanghongxiang23@gmail.com" class="hover:text-brand-accent transition">
+          📧 wanghongxiang23@gmail.com
+        </a>
+        <a href="https://x.com/Rollkey4" target="_blank" rel="noopener noreferrer" class="hover:text-brand-accent transition">
+          𝕏 @Rollkey4
+        </a>
+        <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="hover:text-brand-accent transition">
+          GitHub
+        </a>
+      </div>
+    </footer>
+
+    <!-- Toast 提示 -->
+    <Toast client:load />
+  </body>
+</html>
+

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <!-- 首页 -->
+  <url>
+    <loc>https://textgrove.app/</loc>
+    <lastmod>2025-01-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://textgrove.app/?lang=zh" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://textgrove.app/?lang=en" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://textgrove.app/?lang=ja" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://textgrove.app/?lang=ko" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://textgrove.app/" />
+  </url>
+  
+  <!-- 关于页面 -->
+  <url>
+    <loc>https://textgrove.app/about</loc>
+    <lastmod>2025-01-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://textgrove.app/about?lang=zh" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://textgrove.app/about?lang=en" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://textgrove.app/about?lang=ja" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://textgrove.app/about?lang=ko" />
+  </url>
+  
+  <!-- 设置页面 -->
+  <url>
+    <loc>https://textgrove.app/settings</loc>
+    <lastmod>2025-01-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://textgrove.app/settings?lang=zh" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://textgrove.app/settings?lang=en" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://textgrove.app/settings?lang=ja" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://textgrove.app/settings?lang=ko" />
+  </url>
+</urlset>
+
