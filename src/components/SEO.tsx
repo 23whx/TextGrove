@@ -63,11 +63,18 @@ export default function SEO({
       
       {/* PWA */}
       <link rel="manifest" href="/manifest.json" />
-      <link rel="apple-touch-icon" href="/icon-192.png" />
+      <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
       
-      {/* Favicon */}
+      {/* Favicon - 多格式支持 */}
+      <link rel="icon" type="image/x-icon" href="/favicon.ico" />
       <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-      <link rel="alternate icon" href="/favicon.ico" />
+      <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+      <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+      <link rel="shortcut icon" href="/favicon.ico" />
+      
+      {/* 浏览器主题色 */
+      <meta name="msapplication-TileColor" content="#E8F5E9" />
+      <meta name="msapplication-config" content="/browserconfig.xml" />
       
       {/* 结构化数据 (Schema.org) */}
       <script type="application/ld+json">
