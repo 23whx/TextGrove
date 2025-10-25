@@ -106,6 +106,13 @@ export default function SEO({
           "inLanguage": ["zh-CN", "en-US", "ja-JP", "ko-KR"]
         })}
       </script>
+      
+      {/* Google AdSense */}
+      <script 
+        async 
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4880646654838411"
+        crossOrigin="anonymous"
+      ></script>
     </>
   );
 }
