@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TextGrove 图标测试页面</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: system-ui, -apple-system, sans-serif;
+      background: linear-gradient(135deg, #E8F5E9 0%, #C8E6C9 100%);
+      padding: 40px 20px;
+      min-height: 100vh;
+    }
+    
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      background: white;
+      border-radius: 20px;
+      padding: 40px;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+    }
+    
+    h1 {
+      color: #2E7D32;
+      margin-bottom: 10px;
+      font-size: 2rem;
+    }
+    
+    .subtitle {
+      color: #666;
+      margin-bottom: 30px;
+      font-size: 1.1rem;
+    }
+    
+    .test-section {
+      margin: 30px 0;
+      padding: 20px;
+      background: #f8f9fa;
+      border-radius: 12px;
+      border-left: 4px solid #4CAF50;
+    }
+    
+    .test-section h2 {
+      color: #2E7D32;
+      font-size: 1.3rem;
+      margin-bottom: 15px;
+    }
+    
+    .icon-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+    
+    .icon-test {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    }
+    
+    .icon-test img {
+      display: block;
+      margin: 0 auto 10px;
+      border: 2px solid #e0e0e0;
+      border-radius: 8px;
+      background: white;
+    }
+    
+    .icon-test .label {
+      font-weight: 600;
+      color: #2E7D32;
+      margin-bottom: 5px;
+    }
+    
+    .icon-test .path {
+      font-size: 0.85rem;
+      color: #666;
+      font-family: monospace;
+      word-break: break-all;
+    }
+    
+    .status {
+      display: inline-block;
+      padding: 4px 12px;
+      border-radius: 12px;
+      font-size: 0.85rem;
+      margin-top: 8px;
+      font-weight: 500;
+    }
+    
+    .status-ok {
+      background: #C8E6C9;
+      color: #2E7D32;
+    }
+    
+    .status-error {
+      background: #FFCDD2;
+      color: #C62828;
+    }
+    
+    .checklist {
+      background: #FFF9C4;
+      border-left: 4px solid #FBC02D;
+      padding: 20px;
+      border-radius: 8px;
+      margin: 20px 0;
+    }
+    
+    .checklist h3 {
+      color: #F57F17;
+      margin-bottom: 15px;
+    }
+    
+    .checklist ul {
+      list-style: none;
+      padding: 0;
+    }
+    
+    .checklist li {
+      padding: 8px 0;
+      color: #666;
+    }
+    
+    .checklist li:before {
+      content: "□ ";
+      color: #FBC02D;
+      font-weight: bold;
+      margin-right: 8px;
+    }
+    
+    .info-box {
+      background: #E3F2FD;
+      border-left: 4px solid #2196F3;
+      padding: 20px;
+      border-radius: 8px;
+      margin: 20px 0;
+    }
+    
+    .info-box h3 {
+      color: #1565C0;
+      margin-bottom: 10px;
+    }
+    
+    .info-box p {
+      color: #666;
+      line-height: 1.6;
+      margin: 8px 0;
+    }
+    
+    .test-btn {
+      display: inline-block;
+      padding: 12px 24px;
+      background: #4CAF50;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: 600;
+      margin: 10px 5px;
+      transition: all 0.3s;
+    }
+    
+    .test-btn:hover {
+      background: #388E3C;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+    
+    code {
+      background: #f5f5f5;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-family: monospace;
+      color: #d32f2f;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🔍 TextGrove 图标测试</h1>
+    <p class="subtitle">检查所有图标文件是否正确生成和部署</p>
+    
+    <!-- 核心图标测试 -->
+    <div class="test-section">
+      <h2>🎯 核心图标（必须）</h2>
+      <p style="color: #666; margin-bottom: 15px;">这些图标是导航站和浏览器识别的关键</p>
+      
+      <div class="icon-grid">
+        <div class="icon-test">
+          <img src="/favicon.ico" alt="favicon.ico" width="48" height="48" onerror="this.parentElement.querySelector('.status').className='status status-error'; this.parentElement.querySelector('.status').textContent='❌ 缺失'">
+          <div class="label">favicon.ico</div>
+          <div class="path">/favicon.ico</div>
+          <span class="status status-ok">✓ 已加载</span>
+        </div>
+        
+        <div class="icon-test">
+          <img src="/apple-touch-icon.png" alt="apple-touch-icon" width="90" height="90" onerror="this.parentElement.querySelector('.status').className='status status-error'; this.parentElement.querySelector('.status').textContent='❌ 缺失'">
+          <div class="label">Apple Touch Icon</div>
+          <div class="path">/apple-touch-icon.png</div>
+          <span class="status status-ok">✓ 已加载</span>
+        </div>
+        
+        <div class="icon-test">
+          <img src="/favicon-32x32.png" alt="favicon-32x32" width="32" height="32" onerror="this.parentElement.querySelector('.status').className='status status-error'; this.parentElement.querySelector('.status').textContent='❌ 缺失'">
+          <div class="label">Favicon 32x32</div>
+          <div class="path">/favicon-32x32.png</div>
+          <span class="status status-ok">✓ 已加载</span>
+        </div>
+        
+        <div class="icon-test">
+          <img src="/favicon-16x16.png" alt="favicon-16x16" width="32" height="32" onerror="this.parentElement.querySelector('.status').className='status status-error'; this.parentElement.querySelector('.status').textContent='❌ 缺失'">
+          <div class="label">Favicon 16x16</div>
+          <div class="path">/favicon-16x16.png</div>
+          <span class="status status-ok">✓ 已加载</span>
+        </div>
+      </div>
+    </div>
+    
+    <!-- PWA 图标测试 -->
+    <div class="test-section">
+      <h2>📱 PWA 图标（推荐）</h2>
+      <p style="color: #666; margin-bottom: 15px;">用于将网站添加到主屏幕</p>
+      
+      <div class="icon-grid">
+        <div class="icon-test">
+          <img src="/icon-192.png" alt="icon-192" width="96" height="96" onerror="this.parentElement.querySelector('.status').className='status status-error'; this.parentElement.querySelector('.status').textContent='❌ 缺失'">
+          <div class="label">PWA Icon 192</div>
+          <div class="path">/icon-192.png</div>
+          <span class="status status-ok">✓ 已加载</span>
+        </div>
+        
+        <div class="icon-test">
+          <img src="/icon-512.png" alt="icon-512" width="128" height="128" onerror="this.parentElement.querySelector('.status').className='status status-error'; this.parentElement.querySelector('.status').textContent='❌ 缺失'">
+          <div class="label">PWA Icon 512</div>
+          <div class="path">/icon-512.png</div>
+          <span class="status status-ok">✓ 已加载</span>
+        </div>
+      </div>
+    </div>
+    
+    <!-- 检查清单 -->
+    <div class="checklist">
+      <h3>✅ 部署检查清单</h3>
+      <ul>
+        <li>所有图标文件已放置在 <code>public/</code> 目录</li>
+        <li>运行 <code>npm run build</code> 重新构建项目</li>
+        <li>部署到生产环境（Vercel/Netlify 等）</li>
+        <li>清除浏览器缓存并重新访问网站</li>
+        <li>检查浏览器标签页是否显示图标</li>
+        <li>在导航站后台触发重新抓取（如果可以）</li>
+        <li>等待 24-48 小时让导航站缓存更新</li>
+      </ul>
+    </div>
+    
+    <!-- 在线验证工具 -->
+    <div class="info-box">
+      <h3>🔗 在线验证工具</h3>
+      <p>使用以下工具验证你的网站图标配置：</p>
+      <div style="margin-top: 15px;">
+        <a href="https://realfavicongenerator.net/favicon_checker" target="_blank" class="test-btn">
+          Favicon Checker
+        </a>
+        <a href="https://www.seoptimer.com/meta-tag-checker" target="_blank" class="test-btn">
+          Meta Tag Checker
+        </a>
+        <a href="https://developers.google.com/web/tools/lighthouse" target="_blank" class="test-btn">
+          Lighthouse PWA
+        </a>
+      </div>
+    </div>
+    
+    <!-- 故障排除 -->
+    <div class="info-box" style="background: #FFEBEE; border-left-color: #F44336;">
+      <h3 style="color: #C62828;">🔧 如果图标仍然不显示</h3>
+      <p><strong>1. 检查文件是否存在：</strong></p>
+      <p>手动访问以下 URL，确保返回图片而不是 404：</p>
+      <ul style="margin: 10px 0; padding-left: 20px;">
+        <li><code>https://yourdomain.com/favicon.ico</code></li>
+        <li><code>https://yourdomain.com/apple-touch-icon.png</code></li>
+      </ul>
+      
+      <p><strong>2. 清除缓存：</strong></p>
+      <ul style="margin: 10px 0; padding-left: 20px;">
+        <li>浏览器缓存：Ctrl+Shift+Delete（Windows）/ Cmd+Shift+Delete（Mac）</li>
+        <li>CDN 缓存：在 Vercel/Netlify 控制台手动清除</li>
+        <li>导航站缓存：联系导航站管理员或等待自动更新</li>
+      </ul>
+      
+      <p><strong>3. 验证 HTML 头部：</strong></p>
+      <p>查看网页源代码，确认 <code>&lt;link rel="icon"&gt;</code> 标签正确</p>
+      
+      <p><strong>4. 使用 Google 的富媒体测试工具：</strong></p>
+      <p>访问 <a href="https://search.google.com/test/rich-results" target="_blank" style="color: #1565C0;">Rich Results Test</a> 检查你的网站</p>
+    </div>
+    
+    <!-- 导航站特殊说明 -->
+    <div class="info-box" style="background: #E8F5E9; border-left-color: #4CAF50;">
+      <h3 style="color: #2E7D32;">📌 关于 oumashu.top 导航站</h3>
+      <p><strong>该导航站可能使用以下方式获取图标：</strong></p>
+      <ul style="margin: 10px 0; padding-left: 20px;">
+        <li>1. 直接抓取 <code>/favicon.ico</code></li>
+        <li>2. 解析 HTML <code>&lt;link rel="icon"&gt;</code> 标签</li>
+        <li>3. 抓取 <code>/apple-touch-icon.png</code></li>
+        <li>4. 使用 Google S2 服务生成缩略图</li>
+      </ul>
+      <p style="margin-top: 10px;"><strong>建议操作：</strong></p>
+      <ul style="padding-left: 20px;">
+        <li>✓ 确保 <code>favicon.ico</code> 和 <code>apple-touch-icon.png</code> 都存在</li>
+        <li>✓ 在导航站后台更新你的网站信息（如果有权限）</li>
+        <li>✓ 如果有管理员联系方式，请求手动刷新缓存</li>
+      </ul>
+    </div>
+    
+    <!-- 快速测试链接 -->
+    <div style="text-align: center; margin-top: 30px; padding: 20px; background: #f8f9fa; border-radius: 12px;">
+      <h3 style="color: #2E7D32; margin-bottom: 15px;">🚀 快速访问测试</h3>
+      <p style="color: #666; margin-bottom: 15px;">在浏览器新标签页中打开以下链接，检查文件是否可访问：</p>
+      <a href="/favicon.ico" target="_blank" class="test-btn">favicon.ico</a>
+      <a href="/apple-touch-icon.png" target="_blank" class="test-btn">apple-touch-icon.png</a>
+      <a href="/favicon-32x32.png" target="_blank" class="test-btn">favicon-32x32.png</a>
+      <a href="/icon-192.png" target="_blank" class="test-btn">icon-192.png</a>
+    </div>
+  </div>
+  
+  <script>
+    // 自动检测图标加载状态
+    window.addEventListener('load', function() {
+      const images = document.querySelectorAll('.icon-test img');
+      let successCount = 0;
+      let totalCount = images.length;
+      
+      images.forEach(img => {
+        if (img.complete && img.naturalHeight !== 0) {
+          successCount++;
+        }
+      });
+      
+      // 显示总体结果
+      if (successCount === totalCount) {
+        console.log('✓ 所有图标加载成功！(' + successCount + '/' + totalCount + ')');
+      } else {
+        console.warn('⚠ 部分图标缺失 (' + successCount + '/' + totalCount + ' 成功)');
+      }
+    });
+  </script>
+</body>
+</html>
+
